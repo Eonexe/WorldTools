@@ -1,10 +1,10 @@
-name: WorldTools Build
+name: WorldTools 1.20.6 Build
 
 on:
   pull_request:
   push:
     branches:
-      - "master"
+      - "1.20.6"
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
 
       - name: Elevate wrapper permissions
